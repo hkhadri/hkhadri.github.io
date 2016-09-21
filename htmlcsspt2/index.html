@@ -1,0 +1,135 @@
+/*htmlcsspt2*/
+audio { 
+   display: none;
+}
+body, h1, h2, h3, h4, h5, h6, p, div, ul, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, arial, sans-serif;
+	background-color: #FF8C00;
+}
+#divWrapper {
+	width: 700px;
+	margin: 20px auto;
+}
+#divHeader {
+	width:700px;
+	background: url(images.jpg);
+	text-align: center;
+}
+#divHeader img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#divLine {
+	width: 700px;
+	background: #FFD700;
+	height: 1px;
+}
+#divLinks {
+	width: 700px;
+	background: #FF8C00;
+}
+#divNav {
+	width: 384px;
+	background: #FF8C00;
+	height: 36px;
+	margin: 0 auto;
+}
+#divNav li {
+	list-style-type: none;
+}
+#divNav li {
+	float: left;
+}
+#divNav li a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	background: #FF8C00;
+	width: 80px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	margin: 7px;
+    /*Border Radius*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #FFFF00;
+	/*Gradients*/
+	background: -moz-linear-gradient (top, #FF8C00, #FFD700);
+	background: -webkit-gradient (linear, left top, left bottom, from(#FF8C00), to(#FFD700));
+}
+#divNav li a:hover {
+	background: #FF0000;
+	background: -moz-linear-gradient (top, #FF8C00, #FFD700);
+	background: -webkit-gradient (linear, left top, left bottom, from(#FF8C00), to(#FFD700));
+}
+#divNav li a.current, #divNav li a.current:hover {
+	background: #FF0000;
+	background: -moz-linear-gradient (top, #FF8C00, #FFD700);
+	background: -webkit-gradient (linear, left top, left bottom, from(#FF8C00),to(#FFD700));
+	color: #FFFFFF;
+	cursor: default;
+}
+#divAbout {
+	width: 700px;
+	background: #FF8C00;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#divContent {
+	width: 430px;
+	margin: 0 auto;
+	background: #FF8C00;
+	border: 1px solid #FFFF00;
+	/*Gradient*/
+	background: -moz-linear-gradient (top, #FFFF00, #FFD700, white);
+	background: -webkit-gradient (linear, left top, left bottom, from(#FF8C00), to(white), color-stop(0.5, #FF8C00));
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	/*Shadows*/
+	box-shadow: 1px 1px 4px #FFFF00;
+	-moz-box-shadow: 1px 1px 4px #FFFF00;
+	-webkit-box-shadow: 1px 1px 4px #FFFF00;
+}
+#divContent img {
+	float: left;
+	border: 1px solid #FFFF00;
+	background: #FF8C00;
+	padding: 16px;
+	margin: 0.7em;
+	/*Gradients*/
+	background: -moz-linear-gradient (top, #FF8C00, #FFD700);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FF8C00), to(#FFD700));
+	/*Border Radius*/
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+#divContent h3 {
+	color: #FFFFFF;
+	padding-top: 0.8em;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+#divContent p {
+	font-size:0.7em;
+	color: #FFFFFF;
+	padding: 0.7em;
+	line-height: 1.4em;
+	text-align: justify;
+}
+#divFooter {
+	background: #FF8C00;
+	height: 10px;
+	width: 700px;
+	border-bottom: 1px solid #FFFF00;
+}
