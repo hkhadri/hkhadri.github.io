@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Position Relative + Absolute</title>
+	<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+	<style>
+		* {
+			border: 1px dashed blue;
+		}
+		#box {
+			width: 800px;
+    		margin: 20px auto;
+		}
+		#header {
+    		width: 790px;
+    		height: 100px;
+			border: 5px solid;
+			box-shadow: 2px 2px 123px black;
+		}
+		img {
+   		 	width: 200px;
+   		 	height: 100px;
+			box-shadow: -75px 20px 160px black;
+		}
+		#link {
+	  		width: 574px;
+    		display: inline-block;
+    		text-align: center;
+    		box-sizing: border-box;
+    		height: 100px;
+    		vertical-align: top;
+			box-shadow: 9px 21px 80px black;
+		}
+		#nav {
+			padding: 0px;
+			margin: 0px;
+		}
+		li {
+			display: list-item;
+    		display: inline-block;
+   			margin: 30px 30px 0px 30px;
+    		border-radius: 50%;
+			border: 5px solid;
+			width: 80px;
+			box-shadow: 39px 0px 61px black;
+		}
+		div#side {
+    		width: 190px;
+    		height: inherit;
+    		display: inline-block;
+    		padding: 10px;
+    		margin: 30px 10px 0px 0px;
+			border: 5px solid;
+    		position: relative;
+		}
+		.side1a {
+			border-style: solid;
+    		top: -13px;
+   			right: -5px;
+    		width: 20px;
+    		height: 20px;
+    		-webkit-border-radius: 100px;
+    		background-color: red;				
+		}
+		#side1 {
+			position: absolute;
+		   	right: -15px;		
+		}
+		#side2 {
+			position: absolute;
+		   	left: -15px;
+		}
+		.side1b {
+			border-style: solid;
+    		bottom: -13px;
+   			right: -5px;
+    		width: 20px;
+    		height: 20px;
+    		-webkit-border-radius: 100px;
+    		background-color: red;	
+		}
+		#side3 {
+			position: absolute;
+		   	right: -15px;
+		}
+		#side4 {
+			position: absolute;
+		   	left: -15px;
+		}
+		div#main {
+    		height: inherit;
+    		display: inline-block;
+    		width: 280px;
+    		padding: 10px;
+    		position: relative;
+    		margin: 0px 10px 0px 10px;
+    		top: 30px;
+    		border: 5px solid;
+    		vertical-align: top;
+    		box-shadow: 2px 2px 106px black;
+		}
+		.main1a {
+			border-style: solid;
+    		top: -10px;
+   			right: -5px;
+    		width: 0px;
+    		height: 0px;
+		}
+		#main1 {
+			position: absolute;
+			border-width: 0px 20px 20px 0px;
+    		border-color: transparent red transparent transparent;
+		   	right: -5px;
+		}
+		#main2 {
+			position: absolute;
+			border-width: 20px 20px 0px 0px;
+    		border-color: red transparent transparent transparent;
+    	   	left: -5px;
+    	}
+    	.main1b {
+    		border-style: solid;
+    		right: -5px;
+    		width: 0px;
+    		height: 0px;
+    		bottom: -10px;    		
+    	}
+    	#main3 {
+    		position: absolute;
+    		border-width: 0px 0px 20px 20px;
+    		border-color: transparent transparent red transparent;
+    	}
+    	#main4 {
+    		position: absolute;
+    		border-width: 20px 0px 0px 20px;
+    		border-color: transparent transparent transparent red;
+    		border-style: solid;
+    		left: -5px;
+    	}
+		div#sides {
+			width: 190px;
+			height: inherit;
+			display: inline-block;
+    		padding: 10px;
+			margin: 30px 0px 0px 10px;
+			border: 5px solid;
+		}
+		p, h1, h2 {
+			text-align: justify;
+			font-family: "Ruslan Display";
+			}
+		#footer {
+			width: 800px;
+    		clear: both;
+    		border: 5px solid;
+    		margin: 10px 0px 10px 0px;
+    		box-sizing: border-box;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="header">
+			<img src="https://hkhadri.github.io/htmlcsspt2/title.png">
+			<div id="link">
+				<ul id="nav">
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				</ul>
+			</div><!--end link-->
+		</div><!--end header-->
+		<div id="side">
+			<h2>Lorem Ipsum</h2>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+			<div class="side1a" id="side1"></div>
+			<div class="side1a" id="side2"></div>
+			<div class="side1b" id="side3"></div>
+			<div class="side1b" id="side4"></div></div>
+		<div id="main">
+			<h1>Lorem Ipsum</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><
+			<div class="main1a" id="main1"></div>
+			<div class="main1a" id="main2"></div>
+			<div class="main1b" id="main3"></div>
+			<div class="main1b" id="main4"></div></div>
+		<div id="sides">
+			<h2>Lorem Ipsum</h2>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
+		<div id="footer">
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+		</div><!--end footer-->
+	</div><!--end box-->
+</body>
+</html>
