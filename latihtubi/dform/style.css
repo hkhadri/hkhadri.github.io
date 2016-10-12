@@ -1,0 +1,103 @@
+/*hadzri*/
+* {
+	margin: 0px;
+	border: 1px dashed blue;
+	box-shadow: 2px 2px 200px black;
+	font-family: Verdana;
+	font-size: 11px;
+}
+label, option, input, select {
+	line-height: 1.8;
+	font-size: 11px;
+	vertical-align: top;
+	margin: 10px;
+}
+p {
+	text-align: justify;
+	font-family: "Ruslan Display";
+	line-height: 1.8;
+	font-size: 11px;
+}
+h1, h2, h3, h4 {
+	text-align: center;
+	font-family: 'Ultra', serif;
+	font-variant: small-caps;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+#box {
+	width: 800px;
+    margin: 100px;
+}
+#header {
+	width: 800px;
+}
+img {
+	padding: 10px;
+	width: 200px;
+    height: 75px;
+}
+ul {
+	display: inline-block;
+    box-sizing: border-box;
+    width: 572px;
+    padding: 0px;
+    height: 97px;
+    vertical-align: top;
+}
+li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: 38px 35px 0px 40px;
+}
+#side1 {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
+}
+#main {
+	width: 450px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+}
+#line {
+	width: 160px;
+    height: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px;
+    position: relative;
+    margin: 17px;
+}
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    background-color: blue;
+}
+#circle1, #circle3, #circle5, #circle7 {
+	bottom: -3px;
+	left: -3px;
+}
+#circle2, #circle4, #circle6, #circle8 {
+    right: -3px;
+    top: -3px;
+}
+#form {
+	text-align: center;
+}
+#form1 {
+	display: inline-block;
+}
+#form2 {
+	display: inline-block;
+	vertical-align: top;
+}
+#footer {
+	width: 780px;
+	padding: 10px;
+}
