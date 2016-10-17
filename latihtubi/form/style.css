@@ -1,11 +1,9 @@
 /*hadzri*/
 		* {
 			border: 1px dashed blue;
-            margin: 0px;
+            margin: 0 auto;
+            background-color: orange;
         }
-		html {
-			background: #FF8C00
-		}
 		p {
 			text-align: justify;
 			font-family: Verdana, arial, sans-serif;
@@ -13,7 +11,7 @@
 			font-size: 11px;
             line-height: 1.8;
 			}
-		h1, h2 {
+		h1, h2, h3, legend {
 			font-family: 'Ultra', serif;
 			color: white;
             font-variant: small-caps;
@@ -21,7 +19,6 @@
 		}
 		#box {
 			width: 800px;
-    		margin: 20px auto;
     		background: orange;
 		}
 		#header {
@@ -35,17 +32,14 @@
 		#logo {
    		 	width: 200px;
     		height: 80px;
-   			/*box-shadow: -75px 20px 160px black;*/
     		padding: 10px 10px 10px 10px;
 		}
 		#link {
 	  		width: 564px;
     		display: inline-block;
-    		/*text-align: center;*/
     		box-sizing: border-box;
     		height: 100px;
     		vertical-align: top;
-			/*box-shadow: 9px 21px 80px black;*/
 		}
 		#nav {
 			padding: 0px;
@@ -55,51 +49,28 @@
 		li {
 			font-family: Verdana, arial, sans-serif;
     		display: inline-block;
-    		margin: 38px 30px 0px 30px;
+    		margin: 38px 30px 0px 45px;
     		border-radius: 10%;
     		border: 1px solid red;
     		width: 100px;
     		box-shadow: 39px 0px 61px yellow;
     		background: orange;
-    		/*font-weight: bold;*/
-    		/*color: white;*/
     		font-size: 15px;
-    /* padding: 10px 10px 10px 10px; */
     		text-decoration: none;
-    /* -moz-border-radius: 5px; */
-    /* -webkit-border-radius: 50px; */
-    /* border: 1px solid #FFFF00; */
-    /* width: 100px; */
-    /* padding: 10px 10px 10px 10px; */
-    /* -moz-border-radius: 5px; */
-    /* -webkit-border-radius: 50px; */
-    /* border: 1px solid #FFFF00; */
 }
-
-
-/*			-moz-border-radius: 5px;*/
-/*			-webkit-border-radius: 50px;*/
-/*			border: 1px solid #FFFF00;*/
-/*		}*/	
 		li a {
     		display: block;
-    		/*height: 20px;*/
-    		/*line-height: 20px;*/
-    		/*width: 101px;*/
     		font-weight: bold;
     		color: #FFFFFF;
     		text-align: center;
     		text-decoration: none;
-    /* margin: 0px; */
 		}
 		li a:hover {
-			/*margin: 0px 5px 0px 5px;*/
     		border-radius: 5%;
     		width: 100px;
-			/*padding: 1px 0px 0px 1px;*/
 			background: #FF0000;
 		}
-		div#side {
+		#side {
     		width: 193px;
     		height: inherit;
     		display: inline-block;
@@ -113,49 +84,42 @@
     		border-style: dashed;
 		}
 		.side1a {
-			/*border-style: solid;*/
     		top: -9px;
-   			right: -5px;
     		width: 10px;
     		height: 10px;
     		-webkit-border-radius: 100px;
     		background-color: red;				
     		box-shadow: 2px 2px 106px yellow;
+            position: absolute;
 		}
 		#side1 {
-			position: absolute;
-		   	right: -10px;		
-    		box-shadow: 2px 2px 106px yellow;
+		   	right: -10px;
 		}
 		#side2 {
-			position: absolute;
 		   	left: -9px;
 		}
 		.side1b {
     		bottom: -9px;
-   			right: -5px;
     		width: 10px;
     		height: 10px;
     		-webkit-border-radius: 100px;
     		background-color: red;	
     		box-shadow: 2px 2px 106px yellow;
+            position: absolute;
 		}
 		#side3 {
-			position: absolute;
 		   	right: -10px;
 		}
 		#side4 {
-			position: absolute;
 		   	left: -9px;
 		}
-		div#main {
+		#main {
     		height: inherit;
     		display: inline-block;
     		width: 300px;
     		padding: 10px;
     		position: relative;
-    		margin: 0px 10px 0px 10px;
-    		top: 30px;
+    		margin: 30px 10px 0px 10px;
     		border: 1px solid red;
     		vertical-align: top;
     		box-shadow: 2px 2px 106px yellow;
@@ -165,42 +129,38 @@
 		.main1a {
 			border-style: solid;
     		top: -10px;
-   			right: -5px;
     		width: 0px;
     		height: 0px;
+            position: absolute;
 		}
 		#main1 {
-			position: absolute;
 			border-width: 0px 20px 20px 0px;
     		border-color: transparent red transparent transparent;
 		   	right: -5px;
 		}
 		#main2 {
-			position: absolute;
 			border-width: 20px 20px 0px 0px;
     		border-color: red transparent transparent transparent;
     	   	left: -5px;
     	}
     	.main1b {
     		border-style: solid;
-    		right: -5px;
     		width: 0px;
     		height: 0px;
     		bottom: -10px;    		
+            position: absolute;
     	}
     	#main3 {
-    		position: absolute;
+            right: -5px;
     		border-width: 0px 0px 20px 20px;
     		border-color: transparent transparent red transparent;
     	}
     	#main4 {
-    		position: absolute;
     		border-width: 20px 0px 0px 20px;
     		border-color: transparent transparent transparent red;
-    		border-style: solid;
     		left: -5px;
     	}
-		div#sides {
+		#sides {
 			width: 193px;
 			height: inherit;
 			display: inline-block;
@@ -212,21 +172,18 @@
             position: relative;
 		}
 		.sides1a {
-			/*border-style: solid;*/
     		top: -10px;
     		width: 10px;
     		height: 10px;
     		-webkit-border-radius: 100px;
     		background-color: red;				
     		box-shadow: 2px 2px 106px yellow;
+            position: absolute;
 		}
 		#sides1 {
-			position: absolute;
 		   	right: -10px;		
-    		box-shadow: 2px 2px 106px yellow;
 		}
 		#sides2 {
-			position: absolute;
 		   	left: -10px;
 		}
 		.sides1b {
@@ -236,46 +193,64 @@
     		-webkit-border-radius: 100px;
     		background-color: red;	
     		box-shadow: 2px 2px 106px red;
-		}
-		#sides3 {
-			position: absolute;
-		   	right: -10px;
-            box-shadow: 2px 2px 106px red;
-        }
-		#sides4 {
-			position: absolute;
-		   	left: -10px;
-		}
-		#footer {
-			width: 800px;
-    		clear: both;
-    		border: 1px solid red;
-    		margin: 53px 0px 10px 0px;
-    		box-sizing: border-box;
-			padding: 10px;
-			text-align: center;
-			border-style: outset;
-			box-shadow: 2px 2px 106px yellow;
             position: absolute;
-		}
-		#dragon {
-			width: 200px;
-			height: 200px;
-			}
-        /*.footer1 {
-            position: relative;
-            width: 800px;
-            background: red;
-            bottom: -15px;
-            padding: 10px;
-        }*/
-        #form {
-    text-align: center;
-        margin: 50px 0px 0px 0px
 }
-#form1 {
+#sides3 {
+	right: -10px;
+        }
+#sides4 {
+	left: -10px;
+}
+form {
+    width: 376px;
     display: inline-block;
+    padding: 10px;
+}
+label {
+    display: inline-block;
+    width: 80px;
+    font-family: Verdana, arial, sans-serif;
+    color: white;
+    font-size: 11px;
+    margin: 4px 0px 4px 0px;
+    padding: 2px;
+    vertical-align: top;
+}
+input, textarea {
+    margin: 4px 0px 4px 0px;
+    width: 200px;
+    background-color: orange;
+    display: inline-block;
+    font-family: Verdana, arial, sans-serif;
+    color: white;
+    font-size: 11px;
+}
+fieldset {
+    width: 800px;
+    display: inline-block;
+    margin: 30px 0px;
+    padding: 0px;
+}
+.box {
+    width: 20px;
 }
 #form2 {
     display: inline-block;
     vertical-align: top;
+    height: 229px;
+}
+#submit {
+    text-align: center;
+}
+option, select {
+    font-family: Verdana, arial, sans-serif;
+    font-size: 11px;
+    width: 89px;
+    height: 20px;
+    background-color: orange;
+    color: white;
+}
+#footer {
+    width: 780px;
+    padding: 10px;
+}
