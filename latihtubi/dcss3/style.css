@@ -1,0 +1,158 @@
+/*hadzri*/
+* {
+	margin: 0px;
+	border: 1px dashed blue;
+	box-shadow: 2px 2px 2px black;
+	font-family: Verdana;
+	font-size: 11px;
+}
+p {
+	text-align: justify;
+	font-family: "Ruslan Display";
+	line-height: 1.8;
+	font-size: 11px;
+}
+h1, h2, h3, h4 {
+	text-align: center;
+	font-family: 'Ultra', serif;
+	font-variant: small-caps;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+#box {
+	width: 800px;
+    margin: 100px auto;
+}
+#header {
+	width: 800px;
+	animation-duration: 4s;
+	animation-name: header;
+}
+@keyframes header {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+#logo {
+	padding: 10px;
+	width: 200px;
+    height: 75px;
+}
+ul {
+	display: inline-block;
+    box-sizing: border-box;
+    width: 572px;
+    padding: 0px;
+    height: 97px;
+    vertical-align: top;
+}
+li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: 38px 35px 0px 30px;
+}
+video {
+	display: inline-block;
+	text-align: center;
+	margin: 10px 200px 5px 200px;
+}
+#change {
+	transition: width 2s, height 4s;
+	   width: 2px;
+    height: 2px;
+}
+#change:hover {
+    width: 300px;
+    height: 300px;
+}
+#side1 {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
+}
+#main {
+	width: 450px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+}
+.newspaper {
+	column-count: 3;
+	padding: 5px;
+	margin: 10px;
+	text-align: justify;
+}
+#line {
+	width: 163px;
+    height: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px;
+    position: relative;
+    margin: 17px;
+}
+#circle1, #circle2, #change, #circle4, #circle5, #circle6, #circle7, #circle8 {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    background-color: blue;
+    transition: width 2s;
+}
+#circle1, #change, #circle5, #circle7 {
+	bottom: -3px;
+	left: -3px;
+}
+#circle2, #circle4, #circle6, #circle8 {
+    right: -3px;
+    top: -3px;
+}
+div#circle1:hover {
+    width: 160px;
+}
+div#circle2:hover {
+    width: 160px;
+}
+legend {
+	text-align: center;
+	font-family: "Ruslan Display";
+	line-height: 1.8;
+	font-size: 14px;
+}
+form {
+	display: inline-block;
+	width: 386px;
+	height: 280px;
+}
+label {
+	display: inline-block;
+	width: 80px;
+	vertical-align: top;
+	margin: 4px;
+	padding: 2px;
+}
+input {
+	display: inline-block;
+	width: 200px;
+	margin: 4px;
+	padding: 2px;
+}
+option {
+	padding: 2px;
+	margin: 4px;
+	display: inline-block;
+}
+textarea {
+	width: 300px;
+}
+.box {
+	width: 20px;
+}
+#footer {
+	width: 780px;
+	padding: 10px;
+}
+#form2 {
+	vertical-align: top;
+}
